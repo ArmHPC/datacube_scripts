@@ -1,0 +1,126 @@
+NetCDF Global Attributes:
+        ncei_template_version: 'NCEI_NetCDF_Grid_template_V2.0'
+        title: 'NOAA Climate Data Record (CDR) of CPC Morphing Technique (CMORPH) High-Resolution Global Precipitation Estimates'
+        keywords: 'Precipitation, Satellite, High-Resolution, Global'
+        summary: 'The CMORPH CDR is a reprocessed and bias-corrected global precipitation product created on an 8kmx8km grid over the globe (60S-60N) and in a 30-minute temporal resolution for an 18-year period from January 1998 to the present. First, the purely satellite based CMORPH precipitation estimates (raw CMORPH) are reprocessed. The integration algorithm is fixed and the input Level 2 passive microwave (PMW) retrievals of instantaneous precipitation rates are from identical versions throughout the entire data period. Bias correction is then performed for the raw CMORPH through probability density function (PDF) matching against the CPC daily gauge analysis over land and through adjustment against the Global Precipitation Climatology Program (GPCP) pentad merged analysis of precipitation over ocean. The reprocessed, bias-corrected CMORPH exhibits improved performance in representing the magnitude, spatial distribution patterns and temporal variations of precipitation over the global domain from 60S to 60N. Bias in the CMORPH satellite precipitation estimates is almost completely removed over land during warm seasons (May – September), while during co seasons (October - April) CMORPH tends to under-estimate the precipitation due to the less-than-desirable performance of the current generation PMW retrievals in detecting and quantifying snowfall and cold season rainfall. Details of the CMORPH CDR may be found in Xie et al. (2017).'
+        references: 'Xie, P., et al. (2017), Reprocessed, Bias-Corrected CMORPH Global High-Resolution Precipitation Estimates from 1998, J. Hydrometeorol., 18, 1617-1641 (DOI:10.1175/JHM-D-16-0168.1)'
+        Conventions: 'CF-1.6, ACDD-1.3'
+        naming_authority: 'gov.noaa.ncei'
+        history: 'Version 1.0 release in August 2015'
+        source: 'Passive Microwave (PMW) Level 2 precipitation retrievals from all available sensors; NESDIS Interactive Multisensor Snow and Ice Mapping System (IMS) daily 4-km snow and ice cover maps; CPC Unified Daily Gauge Analysis'
+        license: 'No constraints on data access or use.'
+        cdr_program: 'NOAA/NESDIS Climate Data Record Program'
+        cdr_variable: 'precipitation'
+        product_version: 'Version 1.0'
+        cdm_data_type: 'Grid'
+        project: 'Climate Data Record for CMORPH High-Resolution Satellite Precipitation Estimates. Sponsor: NOAA/NESDIS CDR Program'
+        institution: 'DOC/NOAA/NWS/NCEP/CPC > Climate Prediction Center, National Centers for Environmental Prediction, National Weather Service'
+        contributor_name: 'Pingping Xie; Robert Joyce; Shaorong Wu'
+        contributor_role: 'Project Leader; Co-Investigator; Co-Investigator'
+        creator_name: 'Dr. Pingping Xie'
+        creator_email: 'pingping.xie@noaa.gov'
+        creator_type: 'group'
+        creator_institution: 'DOC/NOAA/NWS/NCEP/CPC > Climate Prediction Center, National Centers for Environmental Prediction, National Weather Service'
+        creator_url: 'http://www.cpc.noaa.gov/'
+        comment: 'Please contact Pingping Xie (pingping.xie@noaa.gov) or Shaorong Wu (shaorong.wu@noaa.gov) for questions on this CDR.'
+        acknowledgement: 'This project was supported in part by a grant from the NOAA Climate Data Record (CDR) Program for satellites.'
+        standard_name_vocabulary: 'CF Standard Name Table (v47, 19 September 2017)'
+        publisher_name: 'NOAA National Centers for Environmental Information'
+        publisher_email: 'ncei.orders@noaa.gov'
+        publisher_type: 'institution'
+        publisher_institution: 'NOAA National Centers for Environmental Information'
+        publisher_url: 'http://www.ncei.noaa.gov'
+        program: 'NOAA Climate Data Record Program'
+        keywords_vocabulary: 'NASA Global Change Master Directory (GCMD) Earth Science Keywords, Version 8.1'
+        platform: 'DMSP 5D-2/F13, DMSP 5D-2/F14, DMSP 5D-3/F15, DMSP 5D-3/F16, DMSP 5D-3/F17, DMSP 5D-3/F18, NOAA-15, NOAA-16, NOAA-17, NOAA-18, NOAA-19, AQUA, TRMM, MetOp-A, MetOp-B, FY-3B'
+        platform_vocabulary: 'NASA Global Change Master Directory (GCMD) Platform Keywords, Version 8.1'
+        instrument: 'SSM/I, AMSU-B, AMSR-E, TMI, MHS, MWRI'
+        instrument_vocabulary: 'NASA Global Change Master Directory (GCMD) Instrument Keywords, Version 8.1'
+        metadata_link: 'gov.noaa.ncdc:C00948'
+        processing_level: 'NOAA Level 3'
+        uuid: '8ad22796-9b2e-11ec-83f2-0050569e42c9'
+        id: 'CMORPH_V1.0_ADJ_8km-30min_2021060105.nc'
+        date_created: '2022-03-03'
+        date_modified: '2022-03-03'
+        date_issued: '2022-03-03'
+        time_coverage_start: '2021-06-01T05:00:00Z'
+        time_coverage_end: '2021-06-01T05:59:59Z'
+        time_coverage_duration: 'PT1H'
+        time_coverage_resolution: 'PT30M'
+        spatial_resolution: '0.0728x0.0728 deg lat/lon (~8km at the Equator)'
+        geospatial_lat_min: -60.0
+        geospatial_lat_max: 60.0
+        geospatial_lat_resolution: 0.072771376
+        geospatial_lat_units: 'degrees_north'
+        geospatial_lon_min: 0.0
+        geospatial_lon_max: 360.0
+        geospatial_lon_resolution: 0.072756669
+        geospatial_lon_units: 'degrees_east'
+NetCDF dimension information:
+        Name: time
+                size: 2
+                type: dtype('int32')
+                standard_name: 'time'
+                long_name: 'starting point of time period'
+                units: 'seconds since 1970-01-01 00:00:00 0:00'
+                calendar: 'gregorian'
+                axis: 'T'
+                bounds: 'time_bounds'
+        Name: lat
+                size: 1649
+                type: dtype('float64')
+                standard_name: 'latitude'
+                long_name: 'latitude of center of grid box'
+                units: 'degrees_north'
+                axis: 'Y'
+                valid_min: -59.963614312
+                valid_max: 59.963613336
+                bounds: 'lat_bounds'
+        Name: lon
+                size: 4948
+                type: dtype('float64')
+                standard_name: 'longitude'
+                long_name: 'longitude of center of grid box'
+                units: 'degrees_east'
+                axis: 'X'
+                valid_min: 0.0363783345
+                valid_max: 359.9636198775
+                bounds: 'lon_bounds'
+        Name: nv
+                size: 2
+                WARNING: nv does not contain variable attributes
+NetCDF variable information:
+        Name: time_bounds
+                dimensions: ('time', 'nv')
+                size: 4
+                type: dtype('int32')
+                units: 'seconds since 1970-01-01 00:00:00 0:00'
+                comment: 'time bounds for each time value'
+        Name: lat_bounds
+                dimensions: ('lat', 'nv')
+                size: 3298
+                type: dtype('float64')
+                units: 'degrees_north'
+                comment: 'latitude values at south and north bounds of grid box'
+        Name: lon_bounds
+                dimensions: ('lon', 'nv')
+                size: 9896
+                type: dtype('float64')
+                units: 'degrees_east'
+                comment: 'longitude values at west and east bounds of grid box'
+        Name: cmorph
+                dimensions: ('time', 'lat', 'lon')
+                size: 16318504
+                type: dtype('int16')
+                standard_name: 'lwe_precipitation_rate'
+                long_name: 'NOAA Climate Data Record (CDR) of CPC Morphing Technique (CMORPH) High Resolution Global Precipitation Estimates'
+                units: 'mm/hr'
+                missing_value: -999
+                valid_min: 0
+                valid_max: 32767
+                scale_factor: 0.01
+                coordinates: 'time lat lon'
+                comment: '!!! CMORPH estimate is rainrate !!!'
+
+
+step - 8kmx8km

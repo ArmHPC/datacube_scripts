@@ -1,0 +1,6 @@
+
+		begin
+      f = addfile("/Users/haykgrigoryan/Documents/IIAP/Remote-Sensing-Data-Processing-Services/RemoteSensing/Precipitation/cmorph/data/example.nc","r")
+      print(f)
+		end
+    
